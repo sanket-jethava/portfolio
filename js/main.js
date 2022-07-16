@@ -254,6 +254,7 @@ function ajaxPortfolioSetup($ajaxLink, $ajaxContainer) {
                 $ajaxContainer.find('.ajax-loader').hide();
             },
             error: function(e) {
+                console.log("error",e)
                 $ajaxContainer.find('.ajax-loader').hide();
                 $ajaxContainer.find('.content-wrap .popup-content').html('<h1 class="text-center">Something went wrong! Retry or refresh the page.</h1>')
             }
